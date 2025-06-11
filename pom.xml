@@ -7,6 +7,10 @@
     <groupId>org.example.learn.arthas</groupId>
     <artifactId>arthas-learn</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>ch01-hello</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
