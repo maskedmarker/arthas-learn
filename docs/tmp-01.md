@@ -8,6 +8,13 @@ trace org.springframework.web.servlet.DispatcherServlet doService
 
 
 trace -E org.example.learn.* .* 
+
+curl http://localhost:9080/myapp/findAllUsers
+trace org.springframework.web.servlet.DispatcherServlet doService -n 1000
+
+trace org.springframework.web.servlet.DispatcherServlet doService '{if(cost > 1000) {print}}' --listenerId myTrace
+
+
 ```
 
 
